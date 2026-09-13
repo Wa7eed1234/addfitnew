@@ -143,7 +143,7 @@ def login():
 def dashboard():
        if current_user.is_authenticated:
             # Render the dashboard for the authenticated user
-             return render_template('dashboard.html')
+             return render_template('dash.html')
        else:
             # Redirect to the login page if not authenticated
              return redirect(url_for('login'))
